@@ -148,6 +148,6 @@ jobs:
                     gh release upload "$REL_TAG" "$TAR_PATH" --clobber
                   else
                     gh release create "$REL_TAG" "$TAR_PATH" \
-                      --title "maturin ${VERSION} vendor" \
-                      --notes "Vendored Cargo dependencies for PyO3/maturin ${VERSION}."
+                      --title "safetensors ${VERSION} vendor" \
+                      --notes "Vendored Cargo dependencies for huggingface/safetensors ${VERSION}."
                   fi
